@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嗯嗯嗯嗯</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 添加网站图标 -->
+    <link rel="icon" href="images/ic.jpg" type="image/jpeg">
+    <!-- 为了兼容不同浏览器，添加多个图标链接 -->
+    <link rel="shortcut icon" href="images/ic.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="images/ic.jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>视频分享</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">视频集</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="video-container">
+                <div class="video-wrapper">
+                    <!-- 视频播放器 -->
+                    <video id="main-video" controls>
+                        <source src="videos/Stored Memor y Concept in Computer.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放标签。
+                    </video>
+                    
+                    <div class="video-controls">
+                        <div class="video-info">
+                            <h2>Stored Memory Concept in Computer Architecture</h2>
+                            
+                            <!-- 简化视频统计信息 - 只保留播放数 -->
+                            <div class="video-stats">
+                                <div class="stats-item">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span>1.4M 播放</span>
+                                </div>
+                            </div>
+                            
+                            <p class="video-description">
+                                原文: <a href="https://www.youtube.com/watch?v=j8NnE1YeSN0" target="_blank">https://www.youtube.com/watch?v=j8NnE1YeSN0</a>
+                                <br>
+                                从刚入大学的计算机导论课就听到冯诺依曼体系结构，但是一直没有深入了解过，直到学习机组，借机会便搜索相关介绍视频，感觉讲得很好，所以分享给大家。
+                                冯诺依曼体系结构从提出就一直沿用至今，足以见其的重要之处，那么它到底是什么呢？快随<del>小编</del>一同前往这条视频吧！
+                            </p>
+                        </div>
+                        
+                        <!-- 保持点赞按钮显示点赞数 -->
+                        <div class="video-actions">
+                            <button class="action-btn like-btn" id="like-button">
+                                <i class="fas fa-thumbs-up"></i> 赞 (25K)
+                            </button>
+                            <button class="action-btn" id="share-button">
+                                <i class="fas fa-share"></i> 分享
+                            </button>
+                            <button class="action-btn" id="download-button">
+                                <i class="fas fa-download"></i> 下载
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 移除相关视频区域 -->
+        </main>
+
+        <!-- 添加提示信息对话框 -->
+        <div id="like-message" class="message-popup">
+            <div class="message-content">
+                <p>感谢点赞，但是不能点赞。</p>
+                <button id="close-message">确定</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 忘了，但是不保留所有权利。</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
